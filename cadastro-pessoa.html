@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://www.softplan.com.br/wp-content/themes/softplan-2019/imagens/favicons/apple-icon-60x60.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/cadastro.css">
+    <title>Cadastro</title>
+</head>
+<body>    
+    <main>
+        <header id="header">
+            <img src="img/logo-softplan.svg" alt="Logo Softplan">    
+            <ul>
+                <li><a href="">Cadastro</a></li>
+                <li><a href="">Consulta</a></li>
+                <li><a href="">Pessoas</a></li>
+                <li><a href="">Sair</a></li>
+            </ul>            
+        </header>
+        <section class="cadastro">
+            <h1>Cadastro de Pessoa</h1>
+            <input type="text" name="cpf" id="cpf" placeholder="Ex: 068.281.279-00">
+            <input type="text" name="nome" id="nome" placeholder="Ex: João da Silva">
+            <input type="email" name="email" id="email" placeholder="pessoa@mail.com">
+            <select name="sexo" id="sexo">
+                <option value="masculino">Masculino</option>
+                <option value="masculino">Feminino</option>
+                <option value="nao_binario">Não binario</option>
+                <option value="prefiro_nao_declarar" selected>Prefiro não declarar</option>
+            </select>
+            <input type="date" name="dataNascimento" id="dataNascimento">
+            <input type="text" name="nacionalidade" id="nacionalidade" placeholder="Ex: Americano">
+            <input type="text" name="naturalidade" id="naturalidade" placeholder="Ex: New York">
+            <input id="submit" type="submit" name="submit" value="Cadastrar">
+        </section>
+    </main>
+    <footer>
+        <img src="" alt="">
+    </footer>
+    <script src="js/functions.js"></script>
+</body>
+</html>

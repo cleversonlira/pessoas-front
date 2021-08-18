@@ -1,0 +1,93 @@
+*, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+input {
+    outline: none;
+}
+
+main {
+    background-color: #5C5CFF;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+#header {
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#header li {
+    display: inline;
+    min-width: 80px;
+    margin-left: 5px;
+}
+
+#header li > a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: bold;   
+    display: inline-block; 
+    text-align: center;
+    min-width: 100px;
+    padding: 5px;
+    border-bottom: solid rgba(255, 255, 255, 0.7) 1px;
+    transition: 0.5s;
+}
+
+li > a:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #5C5CFF !important;
+}
+
+.busca {
+    border: solid rgba(255, 255, 255, 0.7) 1px;
+    padding: 10px 30px 30px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+h1 {
+    width: 100%;
+    color: rgba(255, 255, 255, 0.7); 
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+}
+
+table {
+    text-align: center;
+}
+
+th, td {
+    border-bottom: solid rgba(255, 255, 255, 0.7) 1px;
+    width: 150px; 
+    line-height: 2rem;   
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.id, .editar, .excluir {
+    width: 50px !important;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    height: 50px;
+}
