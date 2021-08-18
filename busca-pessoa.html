@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/busca-pessoa.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Busca</title>
 </head>
 <body>    
@@ -16,31 +16,52 @@
         <header id="header">
             <img src="img/logo-softplan.svg" alt="Logo Softplan">    
             <ul>
-                <li><a href="">Cadastro</a></li>
-                <li><a href="">Consulta</a></li>
-                <li><a href="">Pessoas</a></li>
-                <li><a href="">Sair</a></li>
+                <li><a href="cadastro-pessoa.html">Cadastro</a></li>
+                <li><a href="busca-pessoa.html">Consulta</a></li>
+                <li><a href="pessoas.html">Pessoas</a></li>
+                <li><a href="login.html">Sair</a></li>
             </ul>            
         </header>
         <section class="consulta">
             <h1>Busca de Pessoa por ID</h1>
             <div class="div-consulta">
+                <label for="id-pessoa">Insira o Id para pesquisar:</label>
                 <input type="number" name="id-pessoa" id="id-pessoa" placeholder="insira o Id para pesquisar">
                 <input type="submit" id="buscar" value="Buscar">
             </div>
-            <input type="text" name="cpf" id="cpf" placeholder="CPF" disabled>
-            <input type="text" name="nome" id="nome" placeholder="Nome" disabled>
-            <input type="email" name="email" id="email" placeholder="E-mail" disabled>
-            <select name="sexo" id="sexo" disabled>
-                <option value="nao_binario" selected>Sexo</option>
-                <option value="masculino">Masculino</option>
-                <option value="masculino">Feminino</option>
-                <option value="nao_binario">Não binario</option>
-                <option value="prefiro_nao_declarar">Prefiro não declarar</option>
-            </select>
-            <input type="date" name="dataNascimento" id="dataNascimento" disabled>
-            <input type="text" name="nacionalidade" id="nacionalidade" placeholder="Nacionalidade" disabled>
-            <input type="text" name="naturalidade" id="naturalidade" placeholder="Naturalidade" disabled>
+            <div class="div-campo">
+                <label for="cpf">CPF:</label>
+                <input type="text" name="cpf" id="cpf" placeholder="Ex: 068.281.279-00" disabled>
+            </div>
+            <div class="div-campo">
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" placeholder="Ex: João da Silva" disabled>
+            </div>
+            <div class="div-campo">
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" placeholder="Ex: joao_silva@mail.com" disabled>
+            </div>
+            <div class="div-campo">
+                <label for="sexo">Sexo:</label>
+                <select name="sexo" id="sexo" disabled>
+                    <option value="prefiro_nao_declarar">Prefiro não declarar</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="masculino">Feminino</option>
+                    <option value="nao_binario">Não binario</option>
+                </select>
+            </div>
+            <div class="div-campo">
+                <label for="dataNascimento">Data Nascimento:</label>
+                <input type="date" name="dataNascimento" id="dataNascimento" disabled>
+            </div>
+            <div class="div-campo">
+                <label for="nacionalidade">Nacionalidade:</label>
+                <input type="text" name="nacionalidade" id="nacionalidade" placeholder="Ex: Brasileiro" disabled>
+            </div>
+            <div class="div-campo">
+                <label for="naturalidade">Naturalidade:</label>
+                <input type="text" name="naturalidade" id="naturalidade" placeholder="Ex: Varginha-MG" disabled>
+            </div>
         </section>
     </main>
     <footer>

@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/cadastro.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Cadastro</title>
 </head>
 <body>    
@@ -16,27 +16,51 @@
         <header id="header">
             <img src="img/logo-softplan.svg" alt="Logo Softplan">    
             <ul>
-                <li><a href="">Cadastro</a></li>
-                <li><a href="">Consulta</a></li>
-                <li><a href="">Pessoas</a></li>
-                <li><a href="">Sair</a></li>
-            </ul>            
+                <li><a href="cadastro-pessoa.html">Cadastro</a></li>
+                <li><a href="busca-pessoa.html">Consulta</a></li>
+                <li><a href="pessoas.html">Pessoas</a></li>
+                <li><a href="login.html">Sair</a></li>
+            </ul>             
         </header>
         <section class="cadastro">
-            <h1>Cadastro de Pessoa</h1>
-            <input type="text" name="cpf" id="cpf" placeholder="Ex: 068.281.279-00">
-            <input type="text" name="nome" id="nome" placeholder="Ex: João da Silva">
-            <input type="email" name="email" id="email" placeholder="pessoa@mail.com">
-            <select name="sexo" id="sexo">
-                <option value="masculino">Masculino</option>
-                <option value="masculino">Feminino</option>
-                <option value="nao_binario">Não binario</option>
-                <option value="prefiro_nao_declarar" selected>Prefiro não declarar</option>
-            </select>
-            <input type="date" name="dataNascimento" id="dataNascimento">
-            <input type="text" name="nacionalidade" id="nacionalidade" placeholder="Ex: Americano">
-            <input type="text" name="naturalidade" id="naturalidade" placeholder="Ex: New York">
-            <input id="submit" type="submit" name="submit" value="Cadastrar">
+            <h1>Cadastrar</h1>            
+            <div class="div-campo">
+                <label for="cpf">CPF:</label>
+                <input type="text" name="cpf" id="cpf" placeholder="Ex: 068.281.279-00" >
+            </div>
+            <div class="div-campo">
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" placeholder="Ex: João da Silva" >
+            </div>
+            <div class="div-campo">
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" placeholder="Ex: joao_silva@mail.com" >
+            </div>
+            <div class="div-campo">
+                <label for="sexo">Sexo:</label>
+                <select name="sexo" id="sexo" >
+                    <option value="prefiro_nao_declarar">Prefiro não declarar</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="masculino">Feminino</option>
+                    <option value="nao_binario">Não binario</option>
+                </select>
+            </div>
+            <div class="div-campo">
+                <label for="dataNascimento">Data Nascimento:</label>
+                <input type="date" name="dataNascimento" id="dataNascimento" >
+            </div>
+            <div class="div-campo">
+                <label for="nacionalidade">Nacionalidade:</label>
+                <input type="text" name="nacionalidade" id="nacionalidade" placeholder="Ex: Brasileiro" >
+            </div>
+            <div class="div-campo">
+                <label for="naturalidade">Naturalidade:</label>
+                <input type="text" name="naturalidade" id="naturalidade" placeholder="Ex: Varginha-MG" >
+            </div>
+            <div class="div-campo">
+                <label for="naturalidade">Cadastrar:</label>
+                <input type="text" name="naturalidade" id="naturalidade" placeholder="Ex: Varginha-MG" >
+            </div>
         </section>
     </main>
     <footer>

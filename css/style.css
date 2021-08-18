@@ -52,12 +52,29 @@ li > a:hover {
     color: #5C5CFF !important;
 }
 
-.cadastro {
+header > img {
+    margin-left: 15px;
+}
+
+.consulta, .cadastro {
     border: solid rgba(255, 255, 255, 0.7) 1px;
     padding: 10px 30px 30px 30px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+}
+
+.div-consulta {
+    width: 49.5%;
+    height: 45px;
+}
+
+.div-consulta > input {
+    width: 49.5%;
+}
+
+.div-campo {
+    width: 49.5%;
 }
 
 h1 {
@@ -68,14 +85,39 @@ h1 {
     text-align: center;
 }
 
+label {
+    display: block;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: bold;
+}
+
+#buscar {
+    background-color: #2FFA7B;
+    color: #000;
+    font-weight: bold;
+    border: solid black 0.5px;
+    cursor: pointer;   
+    transition: 0.5s; 
+}
+
+#buscar:hover {
+    color: rgba(255, 255, 255, 0.7);
+    background-color: #5C5CFF;
+    transform: scale(1.02);
+    border: solid rgba(255, 255, 255, 0.7) 0.5px;
+}
+
 input, select {
-    width: 45%;
+    width: 100%;
     padding: 10px 15px;
-    background-color: rgba(255, 255, 255, 0.7);
     border: none;
     margin-bottom: 0.5rem;
     font-weight: bold;
     transition: 0.5s;
+}
+
+input:disabled, select:disabled {
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 #submit, option {
@@ -88,19 +130,6 @@ input:hover, select:hover {
 
 input:active {
     background-color: rgba(255, 255, 255, 0.3);
-}
-
-#submit {
-    background-color: #5C5CFF;
-    color: rgba(255, 255, 255, 0.7);
-    border: solid black 0.5px;
-    cursor: pointer;   
-    transition: 0.5s; 
-}
-
-#submit:hover {
-    transform: scale(1.02);
-    border: solid rgba(255, 255, 255, 0.7) 0.5px;
 }
 
 footer {
