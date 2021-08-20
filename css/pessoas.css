@@ -15,8 +15,9 @@ main {
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: baseline;
     padding: 15px;
+    padding-top: 100px;
 }
 
 #header {
