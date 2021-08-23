@@ -26,29 +26,24 @@
             <h1>Busca de Pessoa por ID</h1>
             <div class="div-consulta">
                 <label for="id-pessoa">Insira o Id para pesquisar:</label>
-                <input type="number" name="id-pessoa" id="id-pessoa" placeholder="insira o Id para pesquisar">
+                <input type="text" name="id-pessoa" id="id-pessoa" placeholder="insira o Id para pesquisar" required>
                 <input type="submit" id="buscar" value="Buscar">
             </div>
             <div class="div-campo">
                 <label for="cpf">CPF:</label>
-                <input type="text" name="cpf" id="cpf" placeholder="Ex: 068.281.279-00" disabled>
+                <input type="text" name="cpf" id="cpf" disabled>
             </div>
             <div class="div-campo">
                 <label for="nome">Nome:</label>
-                <input type="text" name="nome" id="nome" placeholder="Ex: João da Silva" disabled>
+                <input type="text" name="nome" id="nome" disabled>
             </div>
             <div class="div-campo">
                 <label for="email">E-mail:</label>
-                <input type="email" name="email" id="email" placeholder="Ex: joao_silva@mail.com" disabled>
+                <input type="email" name="email" id="email" disabled>
             </div>
             <div class="div-campo">
                 <label for="sexo">Sexo:</label>
-                <select name="sexo" id="sexo" disabled>
-                    <option value="prefiro_nao_declarar">Prefiro não declarar</option>
-                    <option value="masculino">Masculino</option>
-                    <option value="masculino">Feminino</option>
-                    <option value="nao_binario">Não binario</option>
-                </select>
+                <input type="text" name="sexo" id="sexo" disabled>
             </div>
             <div class="div-campo">
                 <label for="dataNascimento">Data Nascimento:</label>
@@ -56,11 +51,11 @@
             </div>
             <div class="div-campo">
                 <label for="nacionalidade">Nacionalidade:</label>
-                <input type="text" name="nacionalidade" id="nacionalidade" placeholder="Ex: Brasileiro" disabled>
+                <input type="text" name="nacionalidade" id="nacionalidade" disabled>
             </div>
             <div class="div-campo">
                 <label for="naturalidade">Naturalidade:</label>
-                <input type="text" name="naturalidade" id="naturalidade" placeholder="Ex: Varginha-MG" disabled>
+                <input type="text" name="naturalidade" id="naturalidade" disabled>
             </div>
         </section>
     </main>

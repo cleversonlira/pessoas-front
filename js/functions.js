@@ -30,13 +30,16 @@ busca.addEventListener("click", () => {
     fetch(url)
     .then(dados => dados.json())
     .then(resposta => { 
-        console.log(resposta.dataNascimento);
-        document.querySelector("#nome").value = resposta.nome;
-        document.querySelector("#cpf").value = resposta.cpf;
-        document.querySelector("#email").value = resposta.email;
-        document.querySelector("#sexo").innerHTML = `<option selected>${resposta.sexo}</option>`;
-        document.querySelector("#dataNascimento").value = resposta.dataNascimento;
-        document.querySelector("#nacionalidade").value = resposta.nacionalidade;
-        document.querySelector("#naturalidade").value = resposta.naturalidade;
-    });
+        if (resposta.nome === undefined) {
+            console.log("entrou no if: é undefined");        
+        } else {
+            document.querySelector("#nome").value = resposta.nome;
+            document.querySelector("#cpf").value = resposta.cpf;
+            document.querySelector("#email").value = resposta.email;
+            document.querySelector("#sexo").value = resposta.sexo;
+            document.querySelector("#dataNascimento").value = resposta.dataNascimento;
+            document.querySelector("#nacionalidade").value = resposta.nacionalidade;
+            document.querySelector("#naturalidade").value = resposta.naturalidade;
+        }   
+    }).catch(resposta => console.log(resposta));
 });
