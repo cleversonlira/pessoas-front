@@ -22,45 +22,47 @@
                 <li><a href="login.html">Sair</a></li>
             </ul>             
         </header>
-        <section class="cadastro">
-            <h1>Cadastrar</h1>            
-            <div class="div-campo">
-                <label for="cpf">CPF:</label>
-                <input type="text" name="cpf" id="cpf" required pattern="^(\d{3}\.\d{3}\.\d{3}-\d{2})|(\d{11})$" title="Digite o cpf corretamente" placeholder="Ex: 068.281.279-00" >
-            </div>
-            <div class="div-campo">
-                <label for="nome">Nome:</label>
-                <input type="text" name="nome" id="nome" placeholder="Ex: João da Silva" >
-            </div>
-            <div class="div-campo">
-                <label for="email">E-mail:</label>
-                <input type="email" name="email" id="email" placeholder="Ex: joao_silva@mail.com" >
-            </div>
-            <div class="div-campo">
-                <label for="sexo">Sexo:</label>
-                <select name="sexo" id="sexo" >
-                    <option value="prefiro_nao_declarar">Prefiro não declarar</option>
-                    <option value="masculino">Masculino</option>
-                    <option value="masculino">Feminino</option>
-                    <option value="nao_binario">Não binario</option>
-                </select>
-            </div>
-            <div class="div-campo">
-                <label for="dataNascimento">Data Nascimento:</label>
-                <input type="date" name="dataNascimento" id="dataNascimento" >
-            </div>
-            <div class="div-campo">
-                <label for="nacionalidade">Nacionalidade:</label>
-                <input type="text" name="nacionalidade" id="nacionalidade" placeholder="Ex: Brasileiro" >
-            </div>
-            <div class="div-campo">
-                <label for="naturalidade">Naturalidade:</label>
-                <input type="text" name="naturalidade" id="naturalidade" placeholder="Ex: Varginha-MG" >
-            </div>
-            <div class="div-campo">
-                <label for="">Cadastrar</label>
-                <input id="submit" type="submit" value="Cadastrar">
-            </div>
+        <section>
+            <form class="cadastro" action="" method="POST">                
+                <h1>Cadastrar</h1>            
+                <div class="div-campo">
+                    <label for="cpf">CPF:</label>
+                    <input type="text" name="cpf" id="cpf" required pattern="^(\d{3}\.\d{3}\.\d{3}-\d{2})|(\d{11})$" title="Digite o cpf corretamente" placeholder="Ex: 068.281.279-00" >
+                </div>
+                <div class="div-campo">
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" placeholder="Ex: João da Silva" >
+                </div>
+                <div class="div-campo">
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" id="email" placeholder="Ex: joao_silva@mail.com" >
+                </div>
+                <div class="div-campo">
+                    <label for="sexo">Sexo:</label>
+                    <select name="sexo" id="sexo" >
+                        <option value="prefiro_nao_declarar">Prefiro não declarar</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="masculino">Feminino</option>
+                        <option value="nao_binario">Não binario</option>
+                    </select>
+                </div>
+                <div class="div-campo">
+                    <label for="dataNascimento">Data Nascimento:</label>
+                    <input type="date" name="dataNascimento" id="dataNascimento" >
+                </div>
+                <div class="div-campo">
+                    <label for="nacionalidade">Nacionalidade:</label>
+                    <input type="text" name="nacionalidade" id="nacionalidade" placeholder="Ex: Brasileiro" >
+                </div>
+                <div class="div-campo">
+                    <label for="naturalidade">Naturalidade:</label>
+                    <input type="text" name="naturalidade" id="naturalidade" placeholder="Ex: Varginha-MG" >
+                </div>
+                <div class="div-campo">
+                    <label for="">Cadastrar</label>
+                    <input id="submit-cadastrar" type="submit" value="Cadastrar">
+                </div>
+            </form>
         </section>
     </main>
     <footer>

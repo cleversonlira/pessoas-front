@@ -124,12 +124,17 @@ input:disabled, select:disabled {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+#submit-cadastrar {
+    color: #000;
+}
+
 #submit, option {
     font-weight: bold;
 }
 
-#submit:hover {
+#submit:hover, #submit-cadastrar:hover {
     background-color: #5C5CFF;
+    color: rgba(255, 255, 255, 0.7)
 }
 
 input:hover, select:hover {
