@@ -77,6 +77,10 @@ header > img {
     width: 49.5%;
 }
 
+.div-campo > input {
+    color: #FFF;
+}
+
 h1 {
     width: 100%;
     color: rgba(255, 255, 255, 0.7); 
@@ -122,6 +126,10 @@ input:disabled, select:disabled {
 
 #submit, option {
     font-weight: bold;
+}
+
+#submit:hover {
+    background-color: #5C5CFF;
 }
 
 input:hover, select:hover {

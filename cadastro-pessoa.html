@@ -26,7 +26,7 @@
             <h1>Cadastrar</h1>            
             <div class="div-campo">
                 <label for="cpf">CPF:</label>
-                <input type="text" name="cpf" id="cpf" placeholder="Ex: 068.281.279-00" >
+                <input type="text" name="cpf" id="cpf" required pattern="^(\d{3}\.\d{3}\.\d{3}-\d{2})|(\d{11})$" title="Digite o cpf corretamente" placeholder="Ex: 068.281.279-00" >
             </div>
             <div class="div-campo">
                 <label for="nome">Nome:</label>
@@ -58,8 +58,8 @@
                 <input type="text" name="naturalidade" id="naturalidade" placeholder="Ex: Varginha-MG" >
             </div>
             <div class="div-campo">
-                <label for="naturalidade">Cadastrar:</label>
-                <input type="text" name="naturalidade" id="naturalidade" placeholder="Ex: Varginha-MG" >
+                <label for="">Cadastrar</label>
+                <input id="submit" type="submit" value="Cadastrar">
             </div>
         </section>
     </main>
